@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>This is Seonmin Lee</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header id="cvHead">
+        <!-- First Background Image with Logo Text -->
+        <div class="bgimg-1 display-container opacity-min" id="sct_home">
+          <div class="display-middle" style="white-space:nowrap;">
+            <span class="cont-center cont-tit tit-black">This is <span class="tit-small">SEONMIN</span> LEE</span>
+          </div>
+        </div>
+
+        <nav id="cvGnb" class="">
+            <h2 class="screen_out">주메뉴</h2>
+            <div class="inner">
+                <ul class="list_gnb">
+                    <li><a href="#sct_home" class="link_cont">HOME</a></li>
+                    <li><a href="#sct_about" class="link_cont">ABOUT ME</a></li>
+                    <li><a href="#sct_skill" class="link_cont">MY SKILLS</a></li>
+                    <li><a href="#sct_portfolio" class="link_cont">PORTFOLIO</a></li>
+                <!-- <li><a href="#sct_contact" class="link_cont">CONTACT ME</a></li> -->
+                </ul>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    var jbOffset = $('#cvGnb').offset();
+                    $(window).scroll(function() {
+                        if ($(document).scrollTop() > jbOffset.top) {
+                            $('#cvGnb').addClass('jbFixed');
+                        } else {
+                            $('#cvGnb').removeClass('jbFixed');
+                        }
+                    });
+                });
+            </script>
+        </nav>
+    </header>
+ 
+    <main id="cvContent">
+        <section id="sct_about">
+            <div class="inner">
+                <div class="cont_about">
+                    <h3 class="tit_cont">About Me</h3>
+                    <ul class="info_about">
+                        <li><img src="images/seon_crt.png"></li>
+                        <li class="txt_cont" style="font-size:24px">Seonmin Lee</li>
+                        <li class="txt_cont">1986.01.20  Female  UI/UX Designer</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="sct_skill">
+            <div class="inner">
+                <h3 class="tit_cont">My Skills</h3>
+                <div class="wrap_data">
+                    <ul class="list_graph">
+                        <li>
+                            <strong class="tit_bar">Photoshop</strong>
+                            <div class="cont_graph">
+                                <span class="graph_bar" style="width:100%"><span class="screen_out">숙련도</span><span class="num screen_out">100%</span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="tit_bar">Illustrator</strong>
+                            <div class="cont_graph">
+                                <span class="graph_bar" style="width:100%"><span class="screen_out">숙련도</span><span class="num screen_out">100%</span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap_data">
+                    <ul class="list_graph">
+                        <li>
+                            <strong class="tit_bar">XD</strong>
+                            <div class="cont_graph">
+                                <span class="graph_bar" style="width:100%"><span class="screen_out">숙련도</span><span class="num screen_out">100%</span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="tit_bar">HTML/CSS</strong>
+                            <div class="cont_graph">
+                                <span class="graph_bar" style="width:85%"><span class="screen_out">숙련도</span><span class="num screen_out">85%</span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="sct_portfolio">
+            <div class="bgimg-2 display-container opacity-min">
+                <div class="display-middle">
+                    <h3 class="tit_cont" style="margin-bottom: 0">PORTFOLIO</h3>
+                </div>
+            </div>
+			
+
+			<!-- <div class="tabmenu">
+				<ul>
+					<li class="active" data-tab="all"><a href="#none">ALL</a></li>
+					<li data-tab="editorial"><a href="#none">Editorial</a></li>
+					<li data-tab="uiux"><a href="#none">UI/UX</a></li>
+					<li data-tab="promotion"><a href="#none">Promotion</a></li>
+					<li data-tab="sns"><a href="#none">SNS</a></li>
+				</ul>
+			</div> -->
+
+            <div class="inner tab-content">
+                <div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_lhl.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="리틀홈런" data-image="images/kids/w_lhl.png">
+                    <p class="screen_out">사이트 [학습프로그램] 메뉴 리뉴얼(PC/Mobile)</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_m_lhl_01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="리틀홈런" data-image="images/kids/m_lhl_01.png">
+                    <p class="screen_out">[마이페이지] 모바일 웹 화면 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_app_tinpogo.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="리틀홈런 런처" data-image="images/kids/app_tinpogo.png">
+                    <p class="screen_out">틴포고 진입 화면 및 학습 리포트 디자인</p>
+                </div>
+                
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_nuri_promotion04.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이" data-image="images/kids/nuri_promotion04.png">
+                    <p class="screen_out">상시 이벤트 페이지 디자인</p>
+                </div> -->
+                
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_nuri_promotion02.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이" data-image="images/kids/nuri_promotion02.png">
+                    <p class="screen_out">롯데월드 정기 할인 이벤트 디자인</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_nuri_promotion01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이" data-image="images/kids/nuri_promotion01.png">
+                    <p class="screen_out">교구 특별 판매 페이지 디자인</p>
+                </div> -->
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_m_lhl_promotion.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="리틀홈런" data-image="images/kids/m_lhl_promotion.png">
+                    <p class="screen_out">구독 이벤트 페이지 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_m_lhl_introduce.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="리틀홈런" data-image="images/kids/m_lhl_introduce.png">
+                    <p class="screen_out">APP 소개 페이지 디자인(Mobile)</p>
+                </div>
+                
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_m_lhl_01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="리틀홈런" data-image="images/kids/m_lhl_01.png">
+                    <p class="screen_out">[마이페이지] 모바일 웹 화면 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_app_with.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이 위드" data-image="images/kids/app_with.png">
+                    <p class="screen_out">UI/UX 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_cubico01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="큐비코" data-image="images/kids/w_cubico01.jpg">
+                    <p class="screen_out">상세 페이지 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_ide.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="IDE" data-image="images/kids/w_ide.png">
+                    <p class="screen_out">중국 수출용 유아 교사 전문 사이트 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_kidspie.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="키즈파이" data-image="images/kids/w_kidspie.png">
+                    <p class="screen_out">키즈파이 랜딩 페이지 디자인</p>
+                </div>
+                
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_nuri_yearplan.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이" data-image="images/kids/w_nuri_yearplan.png">
+                    <p class="screen_out">연안 교육 계획안 페이지 디자인</p>
+                </div>
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_nurikidstv.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리키즈TV" data-image="images/kids/w_nurikidstv.png">
+                    <p class="screen_out">누리키즈TV 페이지 디자인(PC/Mobile)</p>
+                </div> -->
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_nurinori.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이" data-image="images/kids/w_nurinori.png">
+                    <p class="screen_out">누리놀이 운영 디자인 및 유지 보수(PC/Mobile)</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_nurinorishop.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이샵" data-image="images/kids/w_nurinorishop.png">
+                    <p class="screen_out">UI/UX 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_keyble.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="키블" data-image="images/kids/w_keyble.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_w_nurinoriwith.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이 위드" data-image="images/kids/w_nurinoriwith.png">
+                    <p class="screen_out">웹사이트 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_nuri_promotion03.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이" data-image="images/kids/nuri_promotion03.png">
+                    <p class="screen_out">봄맞이 정회원 신청 프로모션 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/kids/tmb_nuri_promotion05.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="누리놀이" data-image="images/kids/nuri_promotion05.png">
+                    <p class="screen_out">여름 할인 프로모션 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bro_01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="삼성웰빙클럽" data-image="images/wbc/edi_bro_01.png">
+                    <p class="screen_out">삼성 임직원 초청 행사용 프로그램북 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_poster_131125.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="삼성웰빙클럽" data-image="images/wbc/edi_poster_131125.png">
+                    <p class="screen_out">삼성 임직원 초청 행사용 포스터 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_m_wellbeing.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/m_wellbeing.png">
+                    <p class="screen_out">모바일웹 디자인</p>
+                </div>
+
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_sam.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="삼성웰빙클럽" data-image="images/wbc/w_sam.png">
+                    <p class="screen_out">웹사이트 운영 디자인 및 유지 보수</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_wbc.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/w_wbc.png">
+                    <p class="screen_out">웹사이트 운영 디자인 및 유지 보수</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_gov.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/w_gov.png">
+                    <p class="screen_out">웹사이트 운영 디자인 및 유지 보수</p>
+                </div>
+               <!--  <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_poster_160323.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="삼성웰빙클럽" data-image="images/wbc/edi_poster_160323.png">
+                    <p class="screen_out">삼성 임직원 대상 프로모션 포스터 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_poster_151126.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/edi_poster_151126.png">
+                    <p class="screen_out">제휴 시설 비치용 포스터 디자인/p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_poster_151125.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/edi_poster_151125.png">
+                    <p class="screen_out">제휴 시설 비치용 포스터 디자인</p>
+                </div>-->
+
+
+                <!--<div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_env_160517.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/edi_env_160517.png">
+                    <p class="screen_out">멤버십 체험 카드 및 속지 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_cou_151104.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/cou_151104.png">
+                    <p class="screen_out">회원 대상 할인 쿠폰 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bro_wbc14.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/edi_bro_wbc14.png">
+                    <p class="screen_out">리플렛 디자인(4P)</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bro_sam14.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="삼성웰빙클럽" data-image="images/wbc/edi_bro_sam14.png">
+                    <p class="screen_out">리플렛 디자인(4P)</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bro_140714.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/edi_bro_140714.png">
+                    <p class="screen_out">리플렛 디자인(2P)</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bro_02.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/edi_bro_02.png">
+                    <p class="screen_out">회사 소개 브로슈어 디자인</p>
+                </div> -->
+                
+                <!--<div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bcard16.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/edi_bcard16.png">
+                    <p class="screen_out">명함 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bcard15.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="속초 공간 소극장" data-image="images/wbc/edi_bcard15.png">
+                    <p class="screen_out">명함 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_bcard13.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="SWC" data-image="images/wbc/edi_bcard13.png">
+                    <p class="screen_out">명함 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_edi_banner_01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="삼성웰빙클럽" data-image="images/wbc/edi_banner_01.png">
+                    <p class="screen_out">삼성 임직원 대상 프로모션 X배너 디자인</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_info_160603.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="삼성웰빙클럽" data-image="images/wbc/ad_info_160603.png">
+                    <p class="screen_out">삼성 임직원 대상 프로모션 X배너 디자인</p>
+                </div> -->
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_info_160323.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_info_160323.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_info_151202.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_info_151202.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_info_151130.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_info_151130.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_info_151103.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_info_151103.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_info_150324.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_info_150324.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/ad_info_140228.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_info_140228.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_160822.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_160822.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_160519.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_160519.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_160411.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_160411.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_160323.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_160323.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_160302.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_160302.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_151201.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_151201.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_150930.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_150930.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_150904.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_150904.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active editorial">
+                    <img src="images/wbc/tmb_ad_150831.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_150831.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!--<div class="col tab-pane all active uiux">
+                    <img src="images/wbc/tmb_ad_150727.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_150727.png">
+                    <p class="screen_out">-</p>
+                </div>-->
+                <!-- <div class="col tab-pane all active promotion">
+                    <img src="images/wbc/tmb_ad_150707.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_150707.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <!-- <div class="col tab-pane all active sns">
+                    <img src="images/wbc/tmb_ad_140923.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_140923.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                <div class="col tab-pane all active promotion">
+                    <img src="images/wbc/tmb_ad_140911.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_140911.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <div class="col tab-pane all active">
+                    <img src="images/wbc/tmb_ad_160317.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_160317.png">
+                    <p class="screen_out">-</p>
+                </div>
+                
+                <div class="col tab-pane pofol all active promotion">
+                    <img src="images/wbc/tmb_ad_140826.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_140826.png">
+                    <p class="screen_out">-</p>
+                </div>
+                <!-- <div class="col tab-pane pofol all active promotion">
+                    <img src="images/wbc/tmb_ad_140708.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="웰빙클럽" data-image="images/wbc/ad_140708.png">
+                    <p class="screen_out">-</p>
+                </div> -->
+                
+                <!-- <div class="col tab-pane pofol al active promotion">
+                    <img src="images/heyzen/tmb_acstory03.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="헤이젠" data-image="images/heyzen/w_acstory03.png">
+                    <p class="screen_out">화이트닝 세럼 상세 페이지</p>
+                </div>
+                <div class="col tab-pane pofol all active promotion">
+                    <img src="images/heyzen/tmb_acstory02.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="헤이젠" data-image="images/heyzen/w_acstory02.png">
+                    <p class="screen_out">달팽이 크림 상세 페이지</p>
+                </div> -->
+                <!-- <div class="col tab-pane pofol all active promotion">
+                    <img src="images/heyzen/tmb_acstory01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="헤이젠" data-image="images/heyzen/w_acstory01.png">
+                    <p class="screen_out">바디워시 용품 상세 페이지</p>
+                </div> -->
+                <!-- <div class="col tab-pane pofol all active promotion">
+                    <img src="images/heyzen/tmb_heyzen01.png" style="width:100%" onclick="onClick(this)" class="cont-hover-opacity col-thumb" alt="헤이젠" data-image="images/heyzen/w_heyzen01.png">
+                    <p class="screen_out">캠핑 용품 상세 페이지</p>
+                </div> -->
+
+                <!-- <button ID="loadMore" class="btn01" style="margin-top:64px">LOAD MORE</button> -->
+            </div>
+        </section>
+
+        <!-- Modal for full size images on click-->
+        
+        <div id="modal01" class="modal tit-black" onclick="this.style.display='none'">
+            <span class="btn01 modal-large tit-black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <div class="modal-content modal-animate-zoom cont-center">
+                <img id="img01" class="modal-image" src="">
+                <p id="caption" class="cont-opacity modal-large" style="margin:16px 0 4px">Sub Text</p>
+            <p id="imgSubText"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="cvFoot">
+        <div class="inner">
+            <h2 class="screen_out">사이트 이용정보</h2>
+            <small class="copy">©Copyright 2017 - Built With SEONMIN LEE</small>
+        </div>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+		function onClick(element) {
+			var imagePath = element.getAttribute("data-image");
+			var subText = element.nextElementSibling.innerHTML;
+			document.getElementById("img01").src = imagePath;
+			document.getElementById("modal01").style.display = "block";
+			var captionText = document.getElementById("caption");
+			var subTextElement = document.getElementById("imgSubText");
+			captionText.innerHTML = element.alt;
+			subTextElement.innerHTML = subText;
+			document.body.classList.add("scroll-none");
+
+			document.getElementById("modal01").addEventListener("click", function() {
+				document.getElementById("modal01").style.display = "none";
+				document.body.classList.remove("scroll-none");
+			});
+		}
+        // Portfolio Button
+        $('#loadMore').click(function(){
+          $('').css('display', 'block');
+        });
+
+		$(document).ready(function() {
+		  $(".tabmenu li").click(function() {
+			$(".tabmenu li").removeClass("active");
+			$(this).addClass("active");
+			var tab = $(this).attr("data-tab");
+			$(".tab-pane").removeClass("active");
+			$(".tab-pane." + tab).addClass("active");
+		  });
+		});
+
+		$(document).ready(function() {
+			$(".tabmenu li").click(function() {
+				var tab_id = $(this).attr("data-tab");
+
+				$(".tabmenu li").removeClass("active");
+				$(".tab-content .tab-pane").removeClass("active");
+
+				$(this).addClass("active");
+				$(".tab-content ." + tab_id).addClass("active");
+			});
+		});
+    </script>     
+</body>
+</html>

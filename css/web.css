@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* reset */
+* {-webkit-box-sizing:border-box;box-sizing:border-box;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {font-size:100%;vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {border-collapse:collapse;border-spacing:0}
+body {-webkit-text-size-adjust:none} /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+body {min-width:320px;background:#fff}
+body,th,td,input,select,textarea,button {font-size:14px;line-height:1.5;font-family:'Malgun Gothic', '맑은 고딕', sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/* global */
+img {width:100%;height:auto;vertical-align:top}
+.screen_out {overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px} /* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.inner {width:100%;max-width:1200px;margin:0 auto;padding:0 10px;}
+.inner:after {display:block;clear:both;content:""}
+.tit_cont {display:block;margin-bottom:30px;font-size:30px;line-height:1.3;color:#566366;text-transform:uppercase}
+.txt_cont {margin-bottom:40px;font-size:22px;color:#919191}
+.btn_comm {display:inline-block;height:56px;margin:0 auto;padding:0 38px;border:2px solid #f6a169;font-size:18px;line-height:52px;color:#f6a169;letter-spacing:-1px;text-transform:uppercase}
+.btn_comm:hover {background-color:#f6a169;color:#fff}
+.mark_outcome {display:inline-block;height:29px;padding:0 10px;font-weight:bold;font-size:14px;line-height:29px;font-family:Helvetica,sans-serif;background-color:#f6a169;color:#fff}
+.wrap_desc, .wrap_data {float:left;width:50%;}
+.wrap_desc {padding-right:30px;}
+.wrap_data {padding-left:30px;}
+.wrap_data .list_date {margin-top:70px;}
+.wrap_data .list_date li {overflow:hidden;margin-bottom:20px;}
+.wrap_data .list_date .info_data {padding-bottom:30px;}
+.wrap_data .list_date .tit_data {display:block;margin-bottom:12px;font-size:22px;line-height:1.2;color:#566366;text-transform:uppercase}
+.wrap_data .list_date .txt_info {display:block;margin-bottom:12px;font-size:18px;color:#919191}
+.wrap_data .list_date .txt_belong {font-weight:bold;}
+.wrap_data .list_date .txt_cont {padding-top:30px;border-top:1px solid #ccc}
+.bx-wrapper .bx-pager-item {display:inline-block;}
+.bx-wrapper .bx-pager-item .bx-pager-link {display:block;overflow:hidden;width:11px;height:11px;margin:0 4px;border:2px solid #f6a169;border-radius:50%;font-size:0;line-height:0;text-indent:-9999px}
+.bx-wrapper .bx-pager-item .bx-pager-link.active {background-color:#f6a169}
+.sct_portfolio .sct_line {
+    border:1px solid #919191;
+    margin:25px auto 30px;
+    width:100%;max-width:1200px;
+    text-align: center;
+}
+
+.sct_portfolio {padding:90px 0 60px;text-align:center}
+.sct_portfolio .txt_cont {margin-bottom:100px;}
+.sct_portfolio .list_photo {overflow:hidden;}
+.sct_portfolio .list_photo li {overflow:hidden;float:left;width:20%;height:240px;margin:0 0 40px;padding:0 20px;}
+.sct_portfolio .list_info li {overflow:hidden;float:left;width:20%;height:330px;margin:0 0 40px;padding:0 20px;}
+
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+.w3-content {
+    max-width: 980px;
+}
+.w3-content, .w3-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.w3-center {
+    text-align: center!important;
+}
+
+.w3-row-padding, .w3-row-padding>.w3-half, .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird, .w3-row-padding>.w3-threequarter, .w3-row-padding>.w3-quarter, .w3-row-padding>.w3-col {
+    padding: 0 8px;
+}
+
+.w3-container:after, .w3-container:before, .w3-panel:after, .w3-panel:before, .w3-row:after, .w3-row:before, .w3-row-padding:after, .w3-row-padding:before, .w3-cell-row:before, .w3-cell-row:after, .w3-clear:after, .w3-clear:before, .w3-bar:before, .w3-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+    float: left;
+    width: 100%;
+}
+
+.w3-hover-opacity {
+    cursor: pointer;
+}
+.w3-center img {
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+#portfolio .w3-col {
+    float: left;
+    width: 33.3%;
+    margin: 20px 0 40px;
+    padding: 0 10px;
+}
+.w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+.w3-modal {
+    z-index: 100;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+/*    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);*/
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+}
+.w3-large {
+    font-size: 18px!important;
+}
+.w3-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.w3-btn, .w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
+
+
+
+@media only screen and (max-width:767px) {
+    .sct_portfolio .txt_cont {margin-bottom:40px}
+	.sct_portfolio .list_photo {margin:0}
+	.sct_portfolio .list_photo li {width:100%;margin-bottom:10px;padding:0 5px}
+}
